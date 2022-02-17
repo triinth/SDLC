@@ -7,86 +7,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SDLC Models</title>
+    <title>SDLC Mudelid</title>
 </head>
 
 <body>
-    <h2>Accordion</h2>
+    <h2>SDLC mudelid</h2>
 
-    <button class="accordion">Waterfall model</button>
+    <button class="accordion">Koskmudel</button>
     <div class="panel">
-        <p>Waterfall Model is a sequential model that divides software development into pre-defined phases. Each phase
-            must be completed before the next phase can begin with no overlap between the phases. Each phase is designed
-            for performing specific activity during the SDLC phase. It was introduced in 1970 by Winston Royce.</p>
-        <img src="images/052615_1232_WhatisSDLCo1.webp" width="300px" alt="waterfall">
-        <h3>When to use SDLC Waterfall Model?</h3>
+        <p>Aastal 1970 räägiti esimest korda tarkvara loomise mudelist nimega waterfall (koskmudel, lineaarne mudel W. Royce 1970[Royce]) :</p>
+        <img src="images/kosk.jpg" alt="waterfall">
+        <h3>Plussid</h3>
+        <p>Koskmudeli eelised: selged põhjused-tagajärjed, struktuur, juhtidel on lihtsam jälgida, kas projekt on graafikus, väljamaksed konkreetsete etappide eest.</p>
+        <p>Mõnikord on see ainuvõimalik lahendus.</p>
+        <p>Näiteks on koskmudel endiselt väga laialt kasutusel, kui tellijaks on riigiasutus. Samuti on mõistlik selle mudeli kasutamine väga väikeste projektide puhul, kus nõuded on selged, ei muutu ning neid ei tule juurde.</p>
+        <h3>Miinused</h3>
+        <p>Koskmudeli puudusteks on kõrge hind, väga pikk valmimisaeg, palju dokumente: iga tagasiminek on väga kallis, igal etapil tehtud muudatus nõuab järgmiste etappide uuesti läbimist ning dokumenteerimist.</p>
+        <p>On olnud palju projekte, mis lõpetati ning võeti vastu, kuid pole kunagi kasutusele võetud: aja jooksul muutusid nõuded nii palju, et valmistarkvara polnud enam vajalik (suure süsteemi kõikide vajaduste peensusteni kirja panemisele võib minna
+            mitu aastat ning paar metsamassiivi dokumentatsiooni koostamisele).</p>
 
-        <b>Waterfall Methodology can be used when:</b>
-
+        <h3>Millal kasutatakse koskmudelit?</h3>
         <ul>
-            <li>Requirements are not changing frequently</li>
-            <li>Application is not complicated and big</li>
-            <li>Project is short</li>
-            <li>Requirement is clear</li>
-            <li>Environment is stable</li>
-            <li>Technology and tools used are not dynamic and is stable</li>
-            <li>Resources are available and trained</li>
+            <li>kui nõuded on teada ning need on lõplikud ega muutu protsessi käigus;
+            </li>
+            <li>on teada, mis tehnoloogiaid kasutada;
+            </li>
+            <li>projekt ei ole liiga pikk;
+            </li>
+            <li>tellija võib olla huvitatud selle mudeli kasutamisest, kui tal ei ole ressursi tegeleda projektiga pidevalt, vaid ainult tellimise (nõuete kogumise) ning testimise ajal.</li>
         </ul>
-        <table>
-            <tr>
-                <th>Different phases</th>
-                <th>Activities performed in each stage</th>
-            </tr>
-            <tr>
-                <td>Requirement Gathering stage</td>
-            </tr>
-
-        </table>
     </div>
 
-    <button class="accordion">What is Incremental Model?</button>
+    <button class="accordion">Mis on iteratiivne mudel?</button>
     <div class="panel">
-        <p>Incremental Model is a process of software development where requirements are broken down into multiple
-            standalone modules of software development cycle. Incremental development is done in steps from analysis
-            design, implementation, testing/verification, maintenance.</p>
-        <img src="images/052615_1049_WhatisIncre1.webp" alt="">
-        <p>Each iteration passes through the requirements, design, coding and testing phases. And each subsequent
-            release of the system adds function to the previous release until all designed functionality has been
-            implemented.</p>
-        <img src="images/052615_1049_WhatisIncre2.webp" alt="">
-        <p>The system is put into production when the first increment is delivered. The first increment is often a core
-            product where the basic requirements are addressed, and supplementary features are added in the next
-            increments. Once the core product is analyzed by the client, there is plan development for the next
-            increment.</p>
-        <h3>Characteristics of an Incremental module includes</h3>
+        <p>Iteratiivne mudel võeti kasutusele <b>1980.</b> aastal. </p>
+        <p> Iteratiivse mudeli puhul valmistatakse toote esimene variant, see vaadatakse üle, otsustatakse, kas on valitud õige tee. Algab uus iteratsioon: toodet täiendatakse, see vaadatakse üle, otsustatakse, kas on valitud õige tee. Algab uus iteratsioon…
+            kuni toode saab valmis.</p>
+        <p>Iteratiivse mudeli puhul on kogu protsess jagatud mitmeks etapiks (siin ja edasi – iteratsioon), iga iteratsioon kestab 2-6 nädalat. Alguses valmistatakse tarkvara kriitilisem osa, sisuliselt jälgitakse seejuures samu samme, mida koskmudeli puhul.
+            Järgmise iteratsiooni ajal täiendatakse tarkvara, luues uue funktsionaalsuse või täiendades seda, mis oli varem tehtud. Iteratsioone korrutatakse projekti lõpetamiseni. Kui tarkvara on valmis, võetakse see kasutusele. Protsessi paremaks suunamiseks
+            võetakse arvesse riskianalüüsi tulemusi. Iteratiivset mudelit võib näidata järgmiselt:</p>
+
+
+        <img src="images/iteratsioon.jpg" alt="">
+        <p>Iteratiivse mudeli raamistikud on näiteks RUP (The Rational Unified Process), EUP (The Enterprise Unified Process).
+        </p>
+
+        <h3>Millal kasutatakse?</h3>
+
         <ul>
             <li>
-                System development is broken down into many mini development projects
+                On olemas üldine pilt, mida tahetakse saavutada. Väiksemaid ülesandeid saab täpsustada hiljem.
             </li>
             <li>
-                Partial systems are successively built to produce a final total system
+                Projekt on suur. Kui on oht, et projekt venib pikaks, tasub võtta kasutusele iteratiivne mudel, kuna see lubab rakendada paralleelseid iteratsioone: minimeerib riski, et projekti lõpuks muutuvad tarkvara vajadused/nõudmised.
             </li>
-            <li>
-                Highest priority requirement is tackled first
-            </li>
-            <li>Once the requirement is developed, requirement for that increment are frozen</li>
-        </ul>
-        <h3>When to use Incremental models?</h3>
-        <ul>
-            <li>
 
-                Requirements of the system are clearly understood
-
-            </li>
-            <li>
-                When demand for an early release of a product arises
-            </li>
-            <li>
-                When high-risk features and goals are involved
-            </li>
-            <li>When software engineering team are not very well skilled or trained</li>
-            <li>Such methodology is more in use for web application and product based companies</li>
         </ul>
+
 
 
 
@@ -97,8 +74,7 @@
 
     <button class="accordion">V Model</button>
     <div class="panel">
-        <p>the V model of testing was developed where for every phase, in the Development life cycle there is a
-            corresponding Testing phase</p>
+        <p>the V model of testing was developed where for every phase, in the Development life cycle there is a corresponding Testing phase</p>
         <img src="images/052715_0904_GuidetoSDLC3.webp" alt="">
         <ul>
             <li>
@@ -108,63 +84,60 @@
             <li>The entire figure looks like a V, hence the name V – model</li>
 
         </ul>
-        <p>Apart from the V model, there are iterative development models, where development is carried in phases, with
-            each phase adding a functionality to the software. Each phase comprises its independent set of development
-            and testing activities.</p>
+        <p>Apart from the V model, there are iterative development models, where development is carried in phases, with each phase adding a functionality to the software. Each phase comprises its independent set of development and testing activities.</p>
 
-        <p>Good examples of Development lifecycles following iterative method are Rapid Application Development, Agile
-            Development</p>
+        <p>Good examples of Development lifecycles following iterative method are Rapid Application Development, Agile Development
+        </p>
     </div>
-    <button class="accordion">Agiilsed meetodid</button>
+    <button class="accordion">Agiilne mudel</button>
     <div class="panel">
-        <h3>Mis on agiilne meetod?</h3>
-        <p>Agiilset tarkvaraprogrammi võib kirjeldada kui loetelu tarkvaraprogrammi lahendustest, millel on nii soove kui ka võimalusi, mis on välja arendatud, kasutades koostööd iseorganiseeruvate ja funktsionaalsete rühmade vahel.</p>
-
-           <p>See edendab adaptiivset planeerimist, evolutsioonilist arengut ja varajast edastamist teie väga iteratiivsetele ja järkjärgulistele lähenemisviisidele tarkvaraarendusele.</p>
+        <h3>Mis on agiilne mudel?</h3>
+        <p>Agiilne mudeliprotsess SDLC-s hõlbustab arendajaid meeskonnaga suhtlemisel ja annab kliendile käimasoleva projekti kohta täieliku ülevaate ning arendaja teeb vajadusel muudatusi. See paneb arendajad muudatusi tegema vastavalt kliendi interaktsioonile
+            ja säästab ümbertöötamisel palju aega. Kuna see lähenemine töötab arendamisel ja testimisel käsikäes, töötavad arendajad ja testijad koos</p>
         <h3>Millal hakati kasutama?</h3>
         <p>1990. aastate alguses lõid Ken Schwaber ja Jeff Sutherland Scrumi metoodika</p>
-        <img src="images/agile_Processesv1_1.webp" alt="">
+        <img src="images/agiilne.jpg" alt="">
         <h3>Miks just agiilne meetod?</h3>
-        <p>Agiilset tehnikat kasutanud ettevõtted saavad reageerida turudünaamikale ja seostada kõigi oma projektidega tõhusalt. Agiilsed koolitused on suurepärane viis nii ettevõtte kui ka projektirühma seadistamiseks agiilse ja ühendatud täitmismeetodi alustalades. Agiilsed koolitused võivad selgeks teha hulga müüte ja arusaamatusi seoses Agile protseduuridega. Samuti võib see toetada ja paljastada Agiilsete ideede põhialuseid ning selgitada erinevate teostuslahenduste erinevusi.</p>
-        <h3>8 printsiipi</h3>
-         <ul><li>Keskendu ettevõtte vajadustele (Focus on the business need)</li>
-           <li> Tarni õigel ajal (Deliver on time)</li>
-            <li>Koostöö ('Collaborate')</li>
-            <li>Ära kunagi anna kvaliteedis järele (Never compromise quality)</li>
-            <li>Ehita järk-järgult (Build incrementally from firm foundations)</li>
-            <li>Tööta iteratiivselt (Develop iteratively)</li>
-            <li>Suhtle pidevalt ja selgelt (Communicate continuously and clearly)</li>
-            <li>Näita, et sul on asjade üle kontroll (Demonstrate control)</li>
-            <li>Feature Driven Development (FDD)</li>
+        <p>Agiilse mudeli peamised eelised on kiirus, reageerimine olukorra muutustele, inimeste suhtlemine. Tellija on motiveeritud liikuma koos projekti meeskonnaga, ta on ise ka meeskonna liige ja kaasatud kogu protsessi.
+        </p>
+
+        <ul>
+            <li>Tellija rahulolu – uus tarkvara tarnitakse tihti ja kiiresti.</li>
+            <li>Inimesed on protsessidest olulisemad: kõik projektis osalevad inimesed on pidevas suhtlemises, mõjutades tulemust.
+            </li>
+            <li>Projektis osalejad saavad kiiresti tagasisidet, kas see, mis tehti, on vajalik.</li>
+            <li>Olukorra muutmisel saab toodet kiiresti muuta.</li>
+            <li>Nõudeid saab muuta isegi väga hilisel projekti etapil.</li>
+            <li>Dokumenteerimine on minimaalne: puhas isedokumenteeriv kood tähendab, et tekib vähem dokumente (mida keegi ei loe) ning koodi puhtana hoidmine on arendaja ülesandeks, ehk on suurem tõenäosus, et dokumentatsioon (minimaalne arv dokumente +
+                isedokumenteeriv kood) on aktuaalne.</li>
         </ul>
-<h3>Näited agiilsest arengumudelist</h3>
-
-    
-    <img src="images/agile_Processesv1_2.webp" alt="">
-    <p>Meeskonnad valivad ühe või kaks meetodit täielikult välja. Üks laialdasemalt kasutatavaid tehnikaid on Scrum ja XP, mis tavaliselt sulanduvad ideaalselt.
-    </p>
-    <p>Scrum on paindliku alamhulk ja XP on lisaks ka paindlik meetod tarkvara korduvaks tegemiseks.</h3>
-    </p>
-
-        
-        
-
-         
+        <h3>Millal kasutada?</h3>
+        <p>Agiilne mudel sobib, kui:</p>
+        <ul>
+            <li>meeskond (tooteomanik, arendustiim) on väga tugev;</li>
+            <li>on soov projektiga kiiresti alustada (ei vaja pikka analüüsi faasi);</li>
+            <li> on tõenäosus, et mõned nõuded ilmnevad hiljem;</li>
+            <li>rahastus ei ole probleemiks.</li>
+        </ul>
+        <h3>Näited agiilsest arengumudelist</h3>
+        <img src="images/agile_Processesv1_2.webp" alt="">
+        <p>Meeskonnad valivad ühe või kaks meetodit täielikult välja. Üks laialdasemalt kasutatavaid tehnikaid on Scrum ja XP, mis tavaliselt sulanduvad ideaalselt.
+        </p>
+        <p>Scrum on paindliku alamhulk ja XP on lisaks ka paindlik meetod tarkvara korduvaks tegemiseks.</h3>
+        </p>
     </div>
-    <button class="accordion">Spiral Model
+    <button class="accordion">Spiraal mudel
     </button>
     <div class="panel">
-        <p>Spiral Model is a risk-driven software development process model. It is a combination of waterfall model and
-            iterative model. Spiral Model helps to adopt software development elements of multiple process models for
-            the software project based on unique risk patterns ensuring efficient development process.</p>
-        <p>Each phase of spiral model in software engineering begins with a design goal and ends with the client
-            reviewing the progress. The spiral model in software engineering was first mentioned by Barry Boehm in his
-            1986 paper.</p>
+        <p>Spiraalmudelit kirjeldas esimest korda Barry Boehm oma 1986 a. artiklis. Protsessi kulgemist kujutab spiraal. Esimene kordus võib olla näiteks seotud süsteemi teostatavuse uurimisega, teine nõudmiste kirjeldamisega, järgmine kavandamisega jne.
+            Mitu kordust on enamasti seotud tarkvara realiseerimisega, kus tema ehitamine toimub inkrementaalselt. Kuid kindlasti ei tohiks spiraali korduseid võrdsustada tavapäraste arendusprotsessi faasidega. Iga kordus on jaotatud 3 kuni 6 sektorisse
+            (erinevad autorid jagavad erinevalt). Iga kordus algab lähema eesmärgi kavandamise ja riskide hindamisega ning lõppeb nö kliendiga - ehk eesmärk peab saama täidetud ja kontrollitud. Sektorite töömahukus ei pruugi olla ühesugune. Boehm'i järgi
+            on sektoreid neli</p>
+        <p>Each phase of spiral model in software engineering begins with a design goal and ends with the client reviewing the progress. The spiral model in software engineering was first mentioned by Barry Boehm in his 1986 paper.</p>
 
-        <p>The development process in Spiral model in SDLC, starts with a small set of requirement and goes through each
-            development phase for those set of requirements. The software engineering team adds functionality for the
-            additional requirement in every-increasing spirals until the application is ready for the production phase.
-            The below figure very well explain Spiral Model:</p>
+        <p>The development process in Spiral model in SDLC, starts with a small set of requirement and goes through each development phase for those set of requirements. The software engineering team adds functionality for the additional requirement in every-increasing
+            spirals until the application is ready for the production phase. The below figure very well explain Spiral Model:
+        </p>
         <img src="images/spiral_model.webp" alt="">
         <h3>When to use Spiral Model?</h3>
         <ul>
@@ -190,21 +163,13 @@
         </ul>
 
     </div>
-    <button class="accordion">Big bang model </button>
-    <div class="panel">
-        <p>The Big bang model is focusing on all types of resources in software development and coding, with no or very
-            little planning. The requirements are understood and implemented when they come.
-            This model works best for small projects with smaller size development teams which are working together. It
-            is also useful for academic software development projects. It is an ideal model where requirements are
-            either unknown or final release date is not given.
-        </p>
-    </div>
+
     <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
 
         for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
+            acc[i].addEventListener("click", function() {
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
                 if (panel.style.display === "block") {
