@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/style.css">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Programmeerimisstiilid</title>
+    <div class="topnav">
+        <a class="active" href="#SDLC">SDLC mudelid</a>
+        <a href="programmingstyles.html" title="">Programmeerimisstiilid</a>
+
+    </div>
+</head>
+
+<body>
+    <h2>Programmeerimisstiilid</h2>
+    <button class="accordion">Behavior-driven development
+</button>
+    <div class="panel">
+        <h3>What is BDD?</h3>
+        <p>Behavior-driven development (BDD) is an Agile software development methodology in which an application is documented and designed around the behavior a user expects to experience when interacting with it. By encouraging developers to focus only
+            on the requested behaviors of an app or program, BDD helps to avoid bloat, excessive code, unnecessary features or lack of focus. This methodology combines, augments and refines the practices used in test-driven development (TDD) and acceptance
+            testing.
+        </p>
+
+        <p> A typical project using behavior-driven development would begin with a conversation between the developers, managers and customer to form an overall picture of how a product is intended to work. The expectations for the product's behavior are
+            then set as goals for the developers, and once all of the behavior tests are passed the product has met its requirements and it ready for delivery to the customer.
+        </p>
+        <p> BDD offers the ability to enlarge the pool of input and feedback to include business stakeholders and end users who may have little software development knowledge. Due to this expanded feedback loop, development teams may more readily use BDD
+            in continuous integration and continuous delivery environments.</p>
+        </p>
+        <h3>How BDD works?</h3>
+        <p>Behavior-driven development revolves around conducting behavior-specific tests, or functional specifications that outline executable scenarios for the application. This includes:</p>
+        <ul>
+            <li>Applying the 5 Whys principle or the if-then scenario to generate user stories and clearly relate application features to a business purpose.</li>
+            <li>Identifying a single outcome for every behavior.
+            </li>
+            <li>Translating each scenario into domain specific language (DSL) to ensure accurate communication.</li>
+            <li>Gathering all behaviors into one set of documentation so it is accessible for all developers, testers and stakeholders.
+            </li>
+        </ul>
+        <p>Behavior-specific tests can be run when a project starts, while a product is in development and when a product is completed. At a minimum, BDD requires that the behavioral tests (similar to unit tests) are created before development starts. Before
+            development begins, all of the behavioral tests will fail, but as development of the product progresses, the tests will begin to pass. Once all of the behavioral tests are considered passing, the product is ready.</p>
+    </div>
+    <button class="accordion">Design-driven development
+    </button>
+    <div class="panel">
+        <h3>What is D-DD?</h3>
+        <p>Design driven development uses design as part of a process to learn and better define requirements in order to build better, more informed technology solutions. It can also be looked at as a process whereby design and user experience drives the
+            development of a product or software application. This leads to products that people enjoy using and want to tell others about.</p>
+        </p>
+        <h3>A design driven development scenario</h3>
+        <p>The Problem + Solutions Thinking Your team has identified a customer problem. You quickly take a divergent approach to brainstorming as a small, diverse group spanning product management, design, technology and sales — to come up with different
+            ideas for how to solve the problem. Through group discussion, you identify the three most valuable ideas. Your designer quickly creates a design artefact or clickable prototype OR 1–2 developers creates a quick and dirty coded prototype.
+            <p> Solutions Testing + Learning You identify a small group of customers and through 3–4 quick rounds of user testing, you learn how to you learn how to improve or change the feature to better meet customer needs.
+            </p>
+            <p>Product Design Before Development You then take the time you need to thoroughly design the feature with continued customer feedback and internal stakeholder reviews. This creates design definition, and also helps your team flesh out technical
+                requirements along the way all while defining a real scope of work prior to coding.</p>
+    </div>
+    <button class="accordion">
+        Domain-driven design
+
+    </button>
+    <div class="panel">
+
+        <h3>What is DDD?</h3>
+        <p>Domain-driven design (DDD) is a software design approach focusing on modelling software to match a domain according to input from that domain's experts. In terms of object-oriented programming it means that the structure and language of software
+            code (class names, class methods, class variables) should match the business domain. For example, if a software processes loan applications, it might have classes like LoanApplication and Customer, and methods such as AcceptOffer and Withdraw.
+            DDD connects the implementation to an evolving model. Domain-driven design is predicated on the following goals:
+            <ul>
+                <li>placing the project's primary focus on the core domain and domain logic;</li>
+                <li> basing complex designs on a model of the domain;
+                </li>
+                <li> initiating a creative collaboration between technical and domain experts to iteratively refine a conceptual model that addresses particular domain problems.
+                </li>
+            </ul>
+            <p> Criticisms of domain-driven design argue that developers must typically implement a great deal of isolation and encapsulation to maintain the model as a pure and helpful construct. While domain-driven design provides benefits such as maintainability,
+                Microsoft recommends it only for complex domains where the model provides clear benefits in formulating a common understanding of the domain.</p>
+            <h3>Kind of models</h3>
+            <p>Domain-driven design recognizes multiple kinds of models.</p>
+            <p>For example, an entity is an object defined not by its attributes, but its identity. As an example, most airlines assign a unique number to seats on every flight: this is the seat's identity.
+            </p> In contrast, a value object is an immutable object that contains attributes but has no conceptual identity. When people exchange business cards, for instance, they only care about the information on the card (its attributes) rather than
+            trying to distinguish between each unique card.</p>
+        <p> Models can also define events (something that happens). A domain event is an event that domain experts care about. </p>
+        <p>Models can be bound together by a root entity to become an aggregate. Objects outside the aggregate are allowed to hold references to the root but not to any other object of the aggregate. The aggregate root checks the consistency of changes in
+            the aggregate. Drivers do not have to individually control each wheel of a car, for instance: they simply drive the car. In this context, a car is an aggregate of several other objects (the engine, the brakes, the headlights, etc.)</p>
+    </div>
+    <button class="accordion">Secure by design
+    </button>
+    <div class="panel">
+        <h3>What is SBD?</h3>
+        <p>
+            Secure by design, in software engineering, means that software products and capabilities have been designed to be foundationally secure.
+        </p>
+        <p> Alternate security strategies, tactics and patterns are considered at the beginning of a software design, and the best are selected and enforced by the architecture, and they are used as guiding principles for developers. It is also encouraged
+            to use strategic design patterns that have beneficial effects on security, even though those design patterns were not originally devised with security in mind.
+        </p>
+        <p> Secure by Design is increasingly becoming the mainstream development approach to ensure security and privacy of software systems. In this approach, security is considered and built into the system at every layer and starts with a robust architecture
+            design. Security architectural design decisions are based on well-known security strategies, tactics, and patterns defined as reusable techniques for achieving specific quality concerns. Security tactics/patterns provide solutions for enforcing
+            the necessary authentication, authorization, confidentiality, data integrity, privacy, accountability, availability, safety and non-repudiation requirements, even when the system is under attack. In order to ensure the security of a software
+            system, not only is it important to design a robust intended security architecture but it is also necessary to map updated security strategies, tactics and patterns to software development in order to maintain security persistence.
+        </p>
+        <h3>Expect attacks</h3>
+        <p>Malicious attacks on software should be assumed to occur, and care is taken to minimize impact. Security vulnerabilities are anticipated, along with invalid user input. Closely related is the practice of using "good" software design, such as domain-driven
+            design or cloud native, as a way to increase security by reducing risk of vulnerability-opening mistakes—even though the design principles used were not originally conceived for security purposes.</p>
+        <h3>Avoid security through obscurity
+        </h3>
+        <p>Generally, designs that work well do not rely on being secret. Often, secrecy reduces the number of attackers by demotivating a subset of the threat population. The logic is that if there is an increase in complexity for the attacker, the increased
+            attacker effort to compromise the target will discourage them. While this technique implies reduced inherent risks, a virtually infinite set of threat actors and techniques applied over time will cause most secrecy methods to fail. While not
+            mandatory, proper security usually means that everyone is allowed to know and understand the design because it is secure. This has the advantage that many people are looking at the computer code, which improves the odds that any flaws will
+            be found sooner. The disadvantage is that attackers can also obtain the code, which makes it easier for them to find vulnerabilities to exploit. It is generally believed, though, that the advantage of the open computer code outweighs the disadvantage.
+        </p>
+    </div>
+    <button class="accordion">Test-driven development
+    </button>
+    <div class="panel">
+        <h3>What is TDD?</h3>
+        <p><b>Test-driven development (TDD)</b> is a software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software development by repeatedly testing the software
+            against all test cases. This is as opposed to software being developed first and test cases created later.
+        </p>
+        <p> Software engineer Kent Beck, who is credited with having developed or "rediscovered" the technique, stated in 2003 that TDD encourages simple designs and inspires confidence.</p>
+        <p> Test-driven development is related to the test-first programming concepts of extreme programming, begun in 1999, but more recently has created more general interest in its own right.
+        </p>
+        <p>Programmers also apply the concept to improving and debugging legacy code developed with older techniques.</p>
+        <h3>Test driven development cycle</h3>
+        <p>
+            <ol>
+                <li>Add a test</li>
+                <p>The adding of a new feature begins by writing a test that passes if the feature's specifications are met. The developer can discover these specifications by asking about use cases and user stories. A key benefit of test-driven development
+                    is that it makes the developer focus on requirements before writing code. This is in contrast with the usual practice, where unit tests are only written after code.</p>
+                <li>Run all tests. The new test should fail for expected reasons</li>
+                <p> This shows that new code is actually needed for the desired feature. It validates that the test harness is working correctly. It rules out the possibility that the new test is flawed and will always pass.
+                </p>
+                <li>Write the simplest code that passes the new test</li>
+                <p> Inelegant or hard code is acceptable, as long as it passes the test. The code will be honed anyway in Step 5. No code should be added beyond the tested functionality.
+                </p>
+                <li>All tests should now pass</li>
+                <p> If any fail, the new code must be revised until they pass. This ensures the new code meets the test requirements and does not break existing features.
+                </p>
+                <li>Refactor as needed, using tests after each refactor to ensure that functionality is preserved</li>
+                <p> Code is refactored for readability and maintainability. In particular, hard-coded test data should be removed. Running the test suite after each refactor helps ensure that no existing functionality is broken.
+                </p>
+                <b>            Examples of refactoring:
+                </b>
+                <ul>
+                    <li>moving code to where it most logically belongs</li>
+                    <li> removing duplicate code
+                    </li>
+                    <li> making names self-documenting
+                    </li>
+                    <li> splitting methods into smaller pieces
+                    </li>
+                    <li> re-arranging inheritance hierarchies
+                    </li>
+
+                </ul>
+            </ol>
+
+            <b>Repeat</b>
+            <p>
+                The cycle above is repeated for each new piece of functionality. Tests should be small and incremental, and commits made often. That way, if new code fails some tests, the programmer can simply undo or revert rather than debug excessively. When using
+                external libraries, it is important not to write tests that are so small as to effectively test merely the library itself, unless there is some reason to believe that the library is buggy or not feature-rich enough to serve all the needs
+                of the software under development.</p>
+        </p>
+
+    </div>
+    <button class="accordion">Acceptance test-driven development
+    </button>
+    <div class="panel">
+        <h3>What is ATDD?</h3>
+
+        <p>Acceptance test–driven development (ATDD) is a development methodology based on communication between the business customers, the developers, and the testers. ATDD encompasses many of the same practices as specification by example (SBE), behavior-driven
+            development (BDD), example-driven development (EDD), and support-driven development also called story test–driven development (SDD). All these processes aid developers and testers in understanding the customer's needs prior to implementation
+            and allow customers to be able to converse in their own domain language.
+        </p>
+        <p>ATDD is closely related to test-driven development (TDD). It differs by the emphasis on developer-tester-business customer collaboration. ATDD encompasses acceptance testing, but highlights writing acceptance tests before developers begin coding.
+        </p>
+        <p>Acceptance tests are from the user's point of view – the external view of the system. They examine externally visible effects, such as specifying the correct output of a system given a particular input. Acceptance tests can verify how the state
+            of something changes, such as an order that goes from "paid" to "shipped". They also can check the interactions with interfaces of other systems, such as shared databases or web services. In general, they are implementation independent, although
+            automation of them may not be.</p>
+        <h3>Creation</h3>
+        <p>Acceptance tests are created when the requirements are analyzed and prior to coding. They can be developed collaboratively by requirement requester (product owner, business analyst, customer representative, etc.), developer, and tester. Developers
+            implement the system using the acceptance tests. Failing tests provide quick feedback that the requirements are not being met. The tests are specified in business domain terms. The terms then form a ubiquitous language that is shared between
+            the customers, developers, and testers. Tests and requirements are interrelated. A requirement that lacks a test may not be implemented properly. A test that does not refer to a requirement is an unneeded test. An acceptance test that is developed
+            after implementation begins represents a new requirement.
+
+        </p>
+        <h3>Testing strategy
+        </h3>
+        <p>Acceptance tests are a part of an overall testing strategy. They are the customer tests that demonstrate the business intent of a system. Component tests are technical acceptance tests developed by an architect that specify the behavior of large
+            modules. Unit tests are created by the developer to drive easy-to-maintain code. They are often derived from acceptance tests and unit tests. Cross-functional testing includes usability testing, exploratory testing, and property testing (scaling
+            and security).
+        </p>
+
+    </div>
+    <button class="accordion">Continuous test-driven development
+    </button>
+    <div class="panel">
+        <h3>What is CTDD</h3>
+        <p>Continuous test-driven development (CTDD) is a software development practice that extends test-driven development (TDD) by means of automatic test execution in the background, sometimes called continuous testing.</p>
+        <h3>Practice</h3>
+        <p>In CTDD the developer writes a test first but is not forced to execute the tests manually. The tests are run automatically by a continuous testing tool running in the background. This technique can potentially reduce the time waste resulting from
+            manual test execution by eliminating the need for the developer to start the test after each phase of the normal TDD practice: after writing the (initially failing) test, after producing the minimal amount of code for the test to pass and
+            after refactoring the code.
+        </p>
+        <b> Continuous testing tools</b>
+        <ul>
+            <li> Infinitest open source Eclipse and IntelliJ plug-in
+            </li>
+            <li> NCrunch commercial continuous testing plug-in for Visual Studio
+            </li>
+            <li> Autotest - continuous testing for Ruby
+            </li>
+            <li> AutoTest.NET - autotest for .NET
+            </li>
+            <li> AutoTest.NET fork for CTDD</li>
+            <li> Mighty-Moose - packaged version of AutoTest.NET
+            </li>
+            <li> PyCrunch — continuous testing for Python, with PyCharm plugin
+            </li>
+            <li> Wallaby.js - continuous testing for JavaScript/TypeScript/CoffeeScript
+            </li>
+
+        </ul>
+
+    </div>
+    <button class="accordion">Specification by example
+    </button>
+    <div class="panel">
+        <h3>What is SBE?</h3>
+        <p>Specification by example (SBE) is a collaborative approach to defining requirements and business-oriented functional tests for software products based on capturing and illustrating requirements using realistic examples instead of abstract statements.
+            It is applied in the context of agile software development methods, in particular behavior-driven development. This approach is particularly successful for managing requirements and functional tests on large-scale projects of significant domain
+            and organisational complexity.
+        </p>
+        <h3> Advantages
+        </h3>
+        <p>Highly abstract or novel new concepts can be difficult to understand without concrete examples.[citation needed] Specification by example is intended to construct an accurate understanding, and significantly reduces feedback loops in software
+            development, leading to less rework, higher product quality, faster turnaround time for software changes and better alignment of activities of various roles involved in software development such as testers, analysts and developers.</p>
+
+        <h3>Examples as a single source of truth</h3>
+        <p>A key aspect of specification by example is creating a single source of truth about required changes from all perspectives. When business analysts work on their own documents, software developers maintain their own documentation and testers maintain
+            a separate set of functional tests, software delivery effectiveness is significantly reduced by the need to constantly coordinate and synchronise those different versions of truth. With short iterative cycles, such coordination is often required
+            on weekly or biweekly basis. With Specification by example, different roles participate in creating a single source of truth that captures everyone's understanding. Examples are used to provide clarity and precision, so that the same information
+            can be used both as a specification and a business-oriented functional test. Any additional information discovered during development or delivery, such as clarification of functional gaps, missing or incomplete requirements or additional tests,
+            is added to this single source of truth. As there is only one source of truth about the functionality, there is no need for coordination, translation and interpretation of knowledge inside the delivery cycle.
+        </p>
+        <p>When applied to required changes, a refined set of examples is effectively a specification and a business-oriented test for acceptance of software functionality. After the change is implemented, specification with examples becomes a document explaining
+            existing functionality. As the validation of such documents is automated, when they are validated frequently, such documents are a reliable source of information on business functionality of underlying software. To distinguish between such
+            documents and typical printed documentation, which quickly gets outdated, a complete set of specifications with examples is called Living Documentation.
+        </p>
+        <h3>Key practices</h3>
+        <p>Teams that apply Specification by example successfully commonly apply the following process patterns:
+        </p>
+        <ul>
+            <li>Deriving scope from goals
+            </li>
+            <li>Specifying collaboratively - through all-team specification workshops, smaller meetings or teleconference reviews
+            </li>
+            <li>Illustrating requirements using examples
+            </li>
+            <li>Refining specifications
+            </li>
+            <li>Automating tests based on examples
+            </li>
+            <li>Validating the underlying software frequently using the tests
+            </li>
+            <li>Evolving a documentation system from specifications with examples to support future development
+            </li>
+            <li>Software teams that apply specification by example within a Scrum framework typically spend 5%-10% of their time in refining the product backlog, including specifying collaboratively, illustrating requirements using examples and refining examples.
+            </li>
+        </ul>
+
+        <h3>Example Mapping</h3>
+        <p>
+            Example Mapping is a simple technique that can steer the conversation and derive Acceptance criteria in a short time. The process breaks stories into Rules and Examples documented in the form of specification by example, and is a widely used technique
+            in the BDD sphere.
+        </p>
+    </div>
+    <button class="accordion">Data-Driven Development</button>
+    <div class="panel">
+        <h3>What is Data-Driven Development?</h3>
+        <p>Data-driven software development is based on solid metrics like Key Performance Indicators (KPIs) or Objectives And Key Results (OKRs). Clear, objective, and unambiguous, these metrics encourage dev teams to think about the long-term strategic
+            objectives of their day-to-day work and the business value of each project. The data allows these teams and individuals to visualize how their work contributes to business success, and how they can support the organization in meeting its vital
+            goals.
+        </p>
+        <p> Here, it’s important to note that despite its focus on hard numbers and statistics, the success of data-driven development depends on people. A metrics-based program can only succeed if individuals and teams understand the data, engage with it,
+            and are open to leveraging it for continuous learning and improvement.
+        </p>
+        <p>Furthermore, the company’s vision and leadership must align with the KPIs and OKRs identified as enablers of the data-driven development program. Robust software engineering metrics (the standards and benchmarks for a project and individual quality)
+            and positive behavioral metrics (what drives your people and encourages them to deliver?) can also help drive program success.</p>
+        <h3>Benefits</h3>
+        <p>The data-driven approach, particularly with well-defined benchmarks, provides greater visibility into in-progress work. This allows each developer to see the impact of their individual effort on overall project success (or failure) and also enables
+            teams to effectively measure the level of success.
+        </p>
+        <p>Teams get the critical information and insights they need to shorten development timelines, solve everyday challenges, and rapidly implement any necessary transformations or changes for continuous improvement. This helps speeds up time-to-market;
+            always a critical factor for competitive differentiation.
+        </p>
+        <p>Moreover, data-driven development promotes a proactive and more agile problem-solving mentality, so that smaller issues can be fixed quickly before they evolve into serious predicaments, or cause long-term business setbacks.
+        </p>
+        <p> Over time, data-driven development enables teams and the organization to explore comparative trends and patterns, both within the organization and in the broader industry or sector. This “big picture” information is vital to develop solutions
+            that are always ahead of the curve.
+        </p>
+        <p>These benefits notwithstanding, data-driven development can also raise some challenges if it’s not properly understood. These challenges must be addressed on priority if the organization is to benefit from its advantages.</p>
+
+    </div>
+    <button class="accordion">Data-Oriented Design</button>
+    <div class="panel">
+        <h3>What is Data-Oriented Design?</h3>
+        <p>Data-Oriented Design is a program optimization approach motivated by efficient usage of the CPU cache, used in video game development. The approach is to focus on the data layout, separating and sorting fields according to when they are needed,
+            and to think about transformations of data. Proponents include Mike Acton, Scott Meyers, and Jonathan Blow.</p>
+
+        <h3> Motives</h3>
+        <p>
+            These methods became especially popular in the mid to late 2000s during the seventh generation of video game consoles that included the IBM PowerPC based PlayStation 3 (PS3) and Xbox 360 consoles. Historically, game consoles often have relatively weak
+            central processing units (CPUs) compared to the top-of-line desktop computer counterparts. This is a design choice to devote more power and transistor budget to the graphics processing units (GPUs). For example, the 7th generation CPUs were
+            not manufactured with modern out-of-order execution processors, but instead use in-order processors with high clock speeds and deep pipelines. In addition, most types of computing systems have main memory located hundreds of clock cycles away
+            from the processing elements. Furthermore, as CPUs have become faster alongside a large increase in main memory capacity, there is massive data consumption that increases the likelihood of cache misses in the shared bus, otherwise known as
+            Von Neumann bottlenecking. Consequently, locality of reference methods have been used to control performance, requiring improvement of memory access patterns to fix bottlenecking. Some of the software issues were also similar to those encountered
+            on the Itanium, requiring loop unrolling for upfront scheduling.
+        </p>
+        <h3>
+            Contrast with object orientation</h3>
+        <p>The claim is that traditional object-oriented programming (OOP) design principles result in poor data locality,[clarification needed] more so if runtime polymorphism (dynamic dispatch) is used (which is especially problematic on some processors).
+            Although OOP appears to "organise code around data", it actually organises source code around data types rather than physically grouping individual fields and arrays in an efficient format for access by specific functions. Moreover, it often
+            hides layout details under abstraction layers, while a data-oriented programmer wants to consider this first and foremost.
+        </p>
+    </div>
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
