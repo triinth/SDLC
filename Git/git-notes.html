@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        code {
+            background-color: steelblue;
+            color: whitesmoke;
+            font-size: 1.2rem;
+        }
+        
+        span {
+            font-weight: 700;
+            color: steelblue;
+        }
+        
+        div {
+            font-family: 'Calibri';
+            width: 45%;
+            margin-left: 1%;
+        }
+        
+        h1 {
+            color: darkslateblue;
+        }
+        
+        h2 {
+            color: coral;
+        }
+    </style>
+    <title>Git and Github</title>
+</head>
+
+<body>
+    <div>
+        <h1>Using GIT</h1>
+        <p> GIT is a version control system. It is a local tool that can be downloaded into your computer. It is used to push code to Github.</p>
+
+        <p><span>Improtance of version control</span><br>When we update then after saving and closing the project we have no access to the previous version of our code because the previous version is overwritten with the new version.
+        </p>
+        <p>
+            <span>Useful material</span><br> Online book about git can be found here: <a href="https://git-scm.com/book/en/v2/Getting-Started-Getting-Help">https://git-scm.com/book/en/v2/Getting-Started-Getting-Help</a>
+        </p>
+
+
+        <h2>Keywords</h2>
+        <p><span>REPOSITORY</span><br>Location where code history is stored. In repository code is structured in a logical way - using branches.</p>
+        <p>
+            <span>BRANCH</span><br>Is kind of like a folder in repository which contains commits.
+        </p>
+        <p>
+            <span>COMMIT</span><br>Different versions of source code inside a branch.
+
+        </p>
+
+
+        <h2>Commands</h2>
+        <code>git init</code>
+        <p>
+            <li>This will initialize a local git repository. It gives command for git to manage this project. </li>
+            <li>.git file will be added with all the files that are needed to create a repository.</li>
+            <li>Initially, git is not tracking any files and the repository is empty.</li>
+        </p>
+        <code>git status</code>
+        <p>
+            <li>Shows what is the status of the repository.</li>
+            <li>This command can show which files is git tracking at the moment</li>
+        </p>
+        <code>git add .</code>
+        <p>
+            <li>With "git add" command we tell git which files to add into the repository and which code parts it should track.
+            </li>
+            <li>With this specific command we tell git to track all the files.</li>
+        </p>
+        <code>git commit -m</code>
+        <p>
+            <li>"git commit" will add this code into the branch.</li>
+            <li>"-m" will add comment of what was edited in this version of code</li>
+            <li>Last commit will be the branch HEAD</li>
+        </p>
+        <code>git log</code>
+        <p>
+            <li>Shows history of commits.</li>
+        </p>
+        <code>git checkout &lt;commit code&gt;</commit></code>
+        <p>
+            <li>Will take you back to previous code.</li>
+        </p>
+        <code>git checkout -- .</commit></code>
+        <p>
+            <li>Will reverse all changes in code that are not committed.</li>
+        </p>
+        <code style="background-color:coral;">git reset --hard &lt;commit code&gt;</code>
+        <p>
+            <li>Will make specified commit as HEAD. All the later commits will not be part of the working tree anymore.
+            </li>
+        </p>
+        <code>git checkout -b &lt;new branch name&gt;</code>
+        <p>
+            <li>Will create new branch and switch to it.</li>
+            <li>New branch will have all commits of the master branch</li>
+        </p>
+        <code>git branch</code>
+        <p>
+            <li>Will show all branches and witch one is currently used.</li>
+        </p>
+        <code>git checkout &lt;existing branch name&gt;</code>
+        <p>
+            <li>Will switch to specified branch.</li>
+        </p>
+        <code>git merge &lt;branch name&gt;</code>
+        <p>
+            <li>Specified branch will be merged to current branch.</li>
+            <li>When after merge a conflict arises git tries to solve conflict but if cannot it shows where the conflict is.
+            </li>
+        </p>
+        <code style="background-color:coral;">git branch -D &lt;branch name&gt;</code>
+        <p>
+            <li>Will delete the specified branch that we do not need anymore.</li>
+        </p>
+    </div>
+    <hr>
+
+
+    <div>
+        <h1>Using GitHub</h1>
+        <p>Is a hosting and collaboration provider. Its purpose is to hold git repositories in the cloud. It is a web based solution. Makes code easily accessible for others.</p>
+
+
+        <h2>Creating a repository to Github</h2>
+        <p>
+            <li>In order for us to start adding files to our repository in Github, we must create an account and add new repository first.</li>
+            <li>We need to add name to our repository and can also add an optional description.</li>
+            <li>After creating a new repository possible commands are provided in Github page. We can copy the code to add an existing repository, for example.</li>
+            <li>After code is pushed to repository we can see the branches in our repository and inside branches we can see the commits.</li>
+        </p>
+        <h2 style="font-size: 1.2rem;">Commands</h2>
+        <code>git remote add origin &lt;repository URL&gt;</code>
+        <p>
+            <li>Adding our local repository to remote repository "origin" with specified URL address.</li>
+        </p>
+        <code>git remote</code>
+        <p>
+            <li>Shows name of the remote repository.</li>
+        </p>
+        <code>git remote -v</code>
+        <p>
+            <li>shows more specific information about remote repository. Also displays the URL and commands that have been used.</li>
+        </p>
+        <code>git push -u origin master</code>
+        <p>
+            <li>will push our branches to the remote repository with name "origin" and to the master branch.</li>
+            <li>establishes upstream between git and github - allows to write commands in more convenient way and user shorter commands.</li>
+        </p>
+        <code>git branch -r</code>
+        <p>
+            <li>we have connection between local master branch and remote branch origin.</li>
+            <li>this connection is created with certain command like "git pull" or "git push" or "git clone".</li>
+        </p> <br>
+        <h2>Start working with existing Github repository</h2>
+        <p>
+            <li> it is possible to clone or download the repository from Github or copy the address of the repository in order to clone the repository with git.</li>
+            <li>after cloning the repository we can open the repository folder and start making changes.</li>
+            <li>In order for update the repository in Github with our changes we need to push the changes</li>
+        </p>
+        <h2 style="font-size: 1.2rem;">Commands</h2>
+        <code>git clone &lt;repository URL&gt;</code>
+        <p>
+            <li>the whole repository from the URL specified will be cloned into our local folder.</li>
+        </p>
+        <code>git push</code>
+        <p>
+            <li>will push our code to the remote repository that has connection with our local repository.</li>
+        </p>
+        <br>
+        <h2>Update local repository from Github</h2>
+        <h2 style="font-size: 1.2rem;">Commands</h2>
+        <code>git fetch</code>
+        <p>
+            <li>Will show us modifications done and they are available in remote tracking branch, but not yet visible to us locally.</li>
+        </p>
+        <code>git merge origin/master</code>
+        <p>
+            <li>will merge remote tracking branch to our local master branch.</li>
+        </p>
+        <code>git pull</code>
+        <p>
+            <li>will fetch changes into "remote tracking branch" and merge the changes to our local branch from it.</li>
+        </p>
+        <br>
+        <h2>Remove connection with the Github repository</h2>
+        <h2 style="font-size: 1.2rem;">Commands</h2>
+        <code>git remote rm origin</code>
+        <p>
+            <li>removes the connection between local and remote repository named "origin".</li>
+        </p>
+    </div>
+    <hr>
+
+</body>
+
+</html>
